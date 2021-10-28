@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/pages/homepage.dart';
 import 'package:my_portfolio/utilities/constand.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
@@ -30,9 +31,16 @@ class MyApp extends StatelessWidget {
         defaultScale: true,
         breakpoints: [
             ResponsiveBreakpoint.resize(450,name: MOBILE),
-            ResponsiveBreakpoint.resize(450,name: MOBILE),
-        ]
+            ResponsiveBreakpoint.resize(800,name: TABLET),
+            ResponsiveBreakpoint.resize(1000,name: TABLET),
+            ResponsiveBreakpoint.resize(1200,name: DESKTOP),
+            ResponsiveBreakpoint.resize(2460,name: "4K"),
+        ],
+        background: Container(
+          color: kBackgroundColor,
+        )
       ),
+      home: homePage(),
     );
   }
 }

@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/pages/components/carousel/carousel.dart';
+import 'package:my_portfolio/pages/components/cv_section/cv_section.dart';
 import 'package:my_portfolio/pages/components/headers/global.dart';
 import 'package:my_portfolio/pages/components/headers/header.dart';
 import 'package:my_portfolio/pages/components/headers/header_item.dart';
+import 'package:my_portfolio/utilities/app_dev/mobileapp.dart';
 import 'package:my_portfolio/utilities/constand.dart';
 
 class homePage extends StatefulWidget {
@@ -69,6 +71,9 @@ class _homePageState extends State<homePage> {
               child: Header(),
             ),
             carousel(),
+            SizedBox(height: 20,),
+            cv_section(),
+            mobileapp(),
           ],
         )),
       ),

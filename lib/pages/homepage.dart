@@ -4,10 +4,11 @@ import 'package:my_portfolio/pages/components/app_dev/mobileapp.dart';
 import 'package:my_portfolio/pages/components/app_dev/problem_solving_application.dart';
 import 'package:my_portfolio/pages/components/carousel/carousel.dart';
 import 'package:my_portfolio/pages/components/cv_section/cv_section.dart';
+import 'package:my_portfolio/pages/components/education/education_section.dart';
 import 'package:my_portfolio/pages/components/headers/global.dart';
 import 'package:my_portfolio/pages/components/headers/header.dart';
 import 'package:my_portfolio/pages/components/headers/header_item.dart';
-import 'package:my_portfolio/pages/components/portfoliostate.dart';
+import 'package:my_portfolio/pages/components/stats/portfoliostate.dart';
 import 'package:my_portfolio/utilities/constand.dart';
 import 'package:my_portfolio/utilities/mobile_json.dart';
 
@@ -26,7 +27,7 @@ class _homePageState extends State<homePage> {
       endDrawer: Drawer(
         child: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
             child: ListView.separated(
                 itemBuilder: (BuildContext context, int index) {
                   return hearderItems[index].isButton
@@ -37,12 +38,12 @@ class _homePageState extends State<homePage> {
                               color: kDangerColor,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 28),
+                            padding:const EdgeInsets.symmetric(horizontal: 28),
                             child: TextButton(
                               onPressed: hearderItems[index].onTap,
                               child: Text(
                                 hearderItems[index].title,
-                                style: TextStyle(
+                                style:const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 13),
@@ -53,13 +54,13 @@ class _homePageState extends State<homePage> {
                       : ListTile(
                           title: Text(
                           hearderItems[index].title,
-                          style: TextStyle(
+                          style:const TextStyle(
                             color: Colors.white,
                           ),
                         ));
                 },
                 separatorBuilder: (BuildContext context, int index) {
-                  return SizedBox();
+                  return const SizedBox();
                 },
                 itemCount: hearderItems.length),
           ),
@@ -74,24 +75,24 @@ class _homePageState extends State<homePage> {
               child: Header(),
             ),
             carousel(),
-            SizedBox(
+           const SizedBox(
               height: 10,
             ),
-            cv_section(),
+          const  cv_section(),
             mobileapp(image_url: mobile[0]['image_url'], title: mobile[0]['name'], Short_note:  mobile[0]['short_note'], branch: mobile[0]['branch'],),
-            SizedBox(
+          const  SizedBox(
               height: 30
             ),
             problem_solving_application(image_url: real_life[0]['image_url'], title:  real_life[0]['name'], Short_note:  real_life[0]['short_note'], branch:  real_life[0]['branch']),
-            Padding(
+           const Padding(
               padding: const EdgeInsets.symmetric(vertical:28.0),
               child: portfolioState (),
             ), 
-            // Column(
-            //   children: List.generate(mobile.length, (index) {
-            //     return 
-            //   }),
-            // )
+
+           const  SizedBox(
+              height: 50,
+            ),
+            education_section(),
           ],
         )),
       ),

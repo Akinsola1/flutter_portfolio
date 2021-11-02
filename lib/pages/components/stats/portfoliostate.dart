@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:my_portfolio/pages/components/stat.dart';
+import 'package:my_portfolio/pages/components/stats/stat.dart';
 import 'package:my_portfolio/utilities/constand.dart';
 import 'package:my_portfolio/utilities/screen_detector.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';

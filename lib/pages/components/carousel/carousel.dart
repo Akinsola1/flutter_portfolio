@@ -27,7 +27,7 @@ class _carouselState extends State<carousel> {
               alignment: Alignment.center,
               child: CarouselSlider(
                   options: CarouselOptions(
-                    // autoPlay: true,
+                    autoPlay: false,
                     viewportFraction: 1,
                     scrollPhysics: NeverScrollableScrollPhysics(),
                     height: carouseContainerHeight,

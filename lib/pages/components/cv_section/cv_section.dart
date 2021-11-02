@@ -9,19 +9,19 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 final List<DesignProcess> designProcess = [
   DesignProcess(
       title: "DESIGN",
-      imagePath: '',
+      imagePath: 'assets/images/Design.png',
       substitle: "shkfasd  hkfajrhbaks hvbashvsohvas gvfvbk jjfbvhsabn"),
   DesignProcess(
-      title: "Effecience",
-      imagePath: '',
+      title: "EMPHATY",
+      imagePath: 'assets/images/emphaty.png',
       substitle: "shkfasd  hkfajrhbaks hvbashvsohvas gvfvbk jjfbvhsabn"),
   DesignProcess(
-      title: "DESIGN",
-      imagePath: '',
+      title: "TEAMWORK",
+      imagePath: 'assets/images/team.png',
       substitle: "shkfasd  hkfajrhbaks hvbashvsohvas gvfvbk jjfbvhsabn"),
   DesignProcess(
-      title: "DESIGN",
-      imagePath: '',
+      title: "SELF-TAUGHT",
+      imagePath: 'assets/images/highlevel.png',
       substitle: "shkfasd  hkfajrhbaks hvbashvsohvas gvfvbk jjfbvhsabn"),
 ];
 
@@ -107,7 +107,7 @@ Widget _buildUi(BuildContext context, double width) {
                                 width: 40,
                               ),
                               SizedBox(
-                                height: 15,
+                                width: 15,
                               ),
                               Text(
                                 designProcess[index].title,

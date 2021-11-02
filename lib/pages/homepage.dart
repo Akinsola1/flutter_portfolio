@@ -1,12 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/pages/components/app_dev/mobileapp.dart';
+import 'package:my_portfolio/pages/components/app_dev/problem_solving_application.dart';
 import 'package:my_portfolio/pages/components/carousel/carousel.dart';
 import 'package:my_portfolio/pages/components/cv_section/cv_section.dart';
 import 'package:my_portfolio/pages/components/headers/global.dart';
 import 'package:my_portfolio/pages/components/headers/header.dart';
 import 'package:my_portfolio/pages/components/headers/header_item.dart';
-import 'package:my_portfolio/utilities/app_dev/mobileapp.dart';
+import 'package:my_portfolio/pages/components/portfoliostate.dart';
 import 'package:my_portfolio/utilities/constand.dart';
+import 'package:my_portfolio/utilities/mobile_json.dart';
 
 class homePage extends StatefulWidget {
   const homePage({Key? key}) : super(key: key);
@@ -71,9 +74,24 @@ class _homePageState extends State<homePage> {
               child: Header(),
             ),
             carousel(),
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 10,
+            ),
             cv_section(),
-            mobileapp(),
+            mobileapp(image_url: mobile[0]['image_url'], title: mobile[0]['name'], Short_note:  mobile[0]['short_note'], branch: mobile[0]['branch'],),
+            SizedBox(
+              height: 30
+            ),
+            problem_solving_application(image_url: real_life[0]['image_url'], title:  real_life[0]['name'], Short_note:  real_life[0]['short_note'], branch:  real_life[0]['branch']),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical:28.0),
+              child: portfolioState (),
+            ), 
+            // Column(
+            //   children: List.generate(mobile.length, (index) {
+            //     return 
+            //   }),
+            // )
           ],
         )),
       ),

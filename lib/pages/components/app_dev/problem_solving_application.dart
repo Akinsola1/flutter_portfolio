@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/utilities/constand.dart';
@@ -5,20 +6,25 @@ import 'package:my_portfolio/utilities/screen_detector.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
 class problem_solving_application extends StatefulWidget {
-   final String image_url;
+  final String image_url;
   final String title;
   final String Short_note;
   final String branch;
-   problem_solving_application({ Key? key, required this.image_url,
+  problem_solving_application(
+      {Key? key,
+      required this.image_url,
       required this.title,
       required this.Short_note,
-      required this.branch }) : super(key: key);
+      required this.branch})
+      : super(key: key);
 
   @override
-  State<problem_solving_application> createState() => _problem_solving_applicationState();
+  State<problem_solving_application> createState() =>
+      _problem_solving_applicationState();
 }
 
-class _problem_solving_applicationState extends State<problem_solving_application> {
+class _problem_solving_applicationState
+    extends State<problem_solving_application> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,6 +35,73 @@ class _problem_solving_applicationState extends State<problem_solving_applicatio
               widget.Short_note, widget.branch),
           desktop: _buildUi(1000, widget.image_url, widget.title,
               widget.Short_note, widget.branch)),
+    );
+  }
+}
+
+class image1 extends StatelessWidget {
+  const image1({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset('assets/images/myBank_home.jpeg');
+  }
+}
+
+class image2 extends StatelessWidget {
+  const image2({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset('assets/images/myBank.jpeg');
+  }
+}
+
+class image_carousel extends StatefulWidget {
+  image_carousel({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  _image_carouselState createState() => _image_carouselState();
+}
+
+class _image_carouselState extends State<image_carousel> {
+  int _currentIndex = 0;
+
+  List cardList = [
+    image1(),
+    image2(),
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return CarouselSlider(
+      options: CarouselOptions(
+        height: 500.0,
+        autoPlay: true,
+        autoPlayInterval: Duration(seconds: 3),
+        autoPlayAnimationDuration: Duration(milliseconds: 800),
+        autoPlayCurve: Curves.fastOutSlowIn,
+        pauseAutoPlayOnTouch: true,
+        aspectRatio: 2.0,
+        onPageChanged: (index, reason) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+      ),
+      items: cardList.map((card) {
+        return Builder(builder: (BuildContext context) {
+          return Container(
+            height: 500,
+            width: 246,
+            child: Card(
+              color: Colors.transparent,
+              child: card,
+            ),
+          );
+        });
+      }).toList(),
     );
   }
 }
@@ -61,7 +134,7 @@ Widget _buildUi(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                       Text(
+                      Text(
                         "$branch",
                         style: GoogleFonts.oswald(
                           color: kPrimaryColor,
@@ -69,9 +142,7 @@ Widget _buildUi(
                           fontSize: 16,
                         ),
                       ),
-                      SizedBox(
-                        height: 10
-                      ),
+                      SizedBox(height: 10),
                       Text(
                         '$title',
                         style: GoogleFonts.oswald(
@@ -150,16 +221,11 @@ Widget _buildUi(
                       )
                     ],
                   )),
-                  SizedBox(
-                    height: 20
-                  ),
+              SizedBox(height: 20),
               Expanded(
-                  flex: constraint.maxWidth > 720 ? 1 : 0,
-                  child: Image.asset(
-                    '$image_url',
-                    height: 500,
-                    width: 500,
-                  )),
+                flex: constraint.maxWidth > 720 ? 1 : 0,
+                child: image_carousel(),
+              ),
             ],
           ),
         ),
@@ -167,4 +233,3 @@ Widget _buildUi(
     }),
   );
 }
-

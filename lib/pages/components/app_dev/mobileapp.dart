@@ -1,3 +1,6 @@
+// ignore_for_file: unnecessary_string_interpolations
+
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/utilities/constand.dart';
@@ -9,13 +12,15 @@ class mobileapp extends StatefulWidget {
   final String title;
   final String Short_note;
   final String branch;
+  final String image_url1;
 
   mobileapp(
       {Key? key,
       required this.image_url,
       required this.title,
       required this.Short_note,
-      required this.branch})
+      required this.branch,
+      required this.image_url1})
       : super(key: key);
 
   @override
@@ -27,12 +32,17 @@ class _mobileappState extends State<mobileapp> {
   Widget build(BuildContext context) {
     return Container(
       child: screenDetector(
-          mobile: _buildUi(MediaQuery.of(context).size.width * .8,
-              widget.image_url, widget.title, widget.Short_note, widget.branch),
+          mobile: _buildUi(
+              MediaQuery.of(context).size.width * .8,
+              widget.image_url,
+              widget.title,
+              widget.Short_note,
+              widget.branch,
+              widget.image_url1),
           tablet: _buildUi(760, widget.image_url, widget.title,
-              widget.Short_note, widget.branch),
+              widget.Short_note, widget.branch, widget.image_url1),
           desktop: _buildUi(1000, widget.image_url, widget.title,
-              widget.Short_note, widget.branch)),
+              widget.Short_note, widget.branch, widget.image_url1)),
     );
   }
 }
@@ -43,6 +53,7 @@ Widget _buildUi(
   final String title,
   final String Short_note,
   final String branch,
+  final String image_url1,
 ) {
   return Center(
     child: LayoutBuilder(builder: (contex, constraint) {
@@ -58,12 +69,8 @@ Widget _buildUi(
             children: [
               Expanded(
                   flex: constraint.maxWidth > 720 ? 1 : 0,
-                  child: Image.asset(
-                    '$image_url',
-                    height: 500,
-                    width: 500,
-                  )),
-             const SizedBox(
+                  child: image_carousel()),
+              const SizedBox(
                 height: 10,
               ),
               Expanded(
@@ -80,7 +87,7 @@ Widget _buildUi(
                           fontSize: 16,
                         ),
                       ),
-                       const SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -148,7 +155,7 @@ Widget _buildUi(
                                   onPressed: () {},
                                   child: const Center(
                                     child: Text(
-                                      "NEXT APP",
+                                      "MORE APPS",
                                       style: TextStyle(
                                           color: kPrimaryColor,
                                           fontSize: 13,
@@ -172,3 +179,78 @@ Widget _buildUi(
   );
 }
 
+// image generator 1
+class image_url1 extends StatelessWidget {
+  image_url1({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset('assets/images/instagram_clone_homepage.jpeg');
+  }
+}
+
+// image generator 2
+
+class image_url2 extends StatelessWidget {
+  image_url2({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset('assets/images/instagram_clone_explore.jpeg');
+  }
+}
+
+// carousel generator
+
+class image_carousel extends StatefulWidget {
+  image_carousel({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  _image_carouselState createState() => _image_carouselState();
+}
+
+class _image_carouselState extends State<image_carousel> {
+  int _currentIndex = 0;
+
+  List cardList = [
+    image_url1(),
+    image_url2(),
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return CarouselSlider(
+      options: CarouselOptions(
+        height: 500.0,
+        autoPlay: true,
+        autoPlayInterval: Duration(seconds: 3),
+        autoPlayAnimationDuration: Duration(milliseconds: 800),
+        autoPlayCurve: Curves.fastOutSlowIn,
+        pauseAutoPlayOnTouch: true,
+        aspectRatio: 2.0,
+        onPageChanged: (index, reason) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+      ),
+      items: cardList.map((card) {
+        return Builder(builder: (BuildContext context) {
+          return Container(
+            height: 500,
+            width: 246,
+            child: Card(
+              color: Colors.transparent,
+              child: card,
+            ),
+          );
+        });
+      }).toList(),
+    );
+  }
+}

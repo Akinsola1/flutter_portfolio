@@ -5,6 +5,7 @@ List mobile = [
     "short_note":
         "efaouefasef asfjhadsbasokf as asha sdckjadbags afsjkfasfhas a",
     "image_url": "assets/images/instagram_clone_homepage.jpeg",
+    "image_url1": "assets/images/instagram_clone_explore.jpeg",
     "branch": "APP CLONES"
   },
   {

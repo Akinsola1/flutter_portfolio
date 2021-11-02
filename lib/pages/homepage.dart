@@ -38,12 +38,12 @@ class _homePageState extends State<homePage> {
                               color: kDangerColor,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding:const EdgeInsets.symmetric(horizontal: 28),
+                            padding: const EdgeInsets.symmetric(horizontal: 28),
                             child: TextButton(
                               onPressed: hearderItems[index].onTap,
                               child: Text(
                                 hearderItems[index].title,
-                                style:const TextStyle(
+                                style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 13),
@@ -54,7 +54,7 @@ class _homePageState extends State<homePage> {
                       : ListTile(
                           title: Text(
                           hearderItems[index].title,
-                          style:const TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                           ),
                         ));
@@ -75,21 +75,28 @@ class _homePageState extends State<homePage> {
               child: Header(),
             ),
             carousel(),
-           const SizedBox(
+            const SizedBox(
               height: 10,
             ),
-          const  cv_section(),
-            mobileapp(image_url: mobile[0]['image_url'], title: mobile[0]['name'], Short_note:  mobile[0]['short_note'], branch: mobile[0]['branch'],),
-          const  SizedBox(
-              height: 30
+            cv_section(),
+            mobileapp(
+              image_url: '',
+              image_url1: '',
+              title: mobile[0]['name'],
+              Short_note: mobile[0]['short_note'],
+              branch: mobile[0]['branch'],
             ),
-            problem_solving_application(image_url: real_life[0]['image_url'], title:  real_life[0]['name'], Short_note:  real_life[0]['short_note'], branch:  real_life[0]['branch']),
-           const Padding(
-              padding: const EdgeInsets.symmetric(vertical:28.0),
-              child: portfolioState (),
-            ), 
-
-           const  SizedBox(
+            const SizedBox(height: 30),
+            problem_solving_application(
+                image_url: '',
+                title: real_life[0]['name'],
+                Short_note: real_life[0]['short_note'],
+                branch: real_life[0]['branch']),
+            const Padding(
+              padding: const EdgeInsets.symmetric(vertical: 28.0),
+              child: portfolioState(),
+            ),
+            const SizedBox(
               height: 50,
             ),
             education_section(),

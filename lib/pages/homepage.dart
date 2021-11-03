@@ -8,6 +8,7 @@ import 'package:my_portfolio/pages/components/education/education_section.dart';
 import 'package:my_portfolio/pages/components/headers/global.dart';
 import 'package:my_portfolio/pages/components/headers/header.dart';
 import 'package:my_portfolio/pages/components/headers/header_item.dart';
+import 'package:my_portfolio/pages/components/skills/skill_section.dart';
 import 'package:my_portfolio/pages/components/stats/portfoliostate.dart';
 import 'package:my_portfolio/utilities/constand.dart';
 import 'package:my_portfolio/utilities/mobile_json.dart';
@@ -100,6 +101,10 @@ class _homePageState extends State<homePage> {
               height: 50,
             ),
             education_section(),
+            SizedBox(
+              height: 50,
+            ),
+            skill_section(),
           ],
         )),
       ),

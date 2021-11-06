@@ -18,6 +18,7 @@ class skill_section extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.symmetric(vertical: 30),
       child: screenDetector(
           mobile: _buildUi(MediaQuery.of(context).size.width * .8),
           tablet: _buildUi(700),
@@ -104,7 +105,7 @@ Widget _buildUi(double width) {
                                         ),
                                       ),
                                       Text(
-                                        "${skills.percentage}%",
+                                        "  ${skills.percentage}%",
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 16,

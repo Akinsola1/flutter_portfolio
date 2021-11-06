@@ -5,11 +5,13 @@ import 'package:my_portfolio/pages/components/app_dev/problem_solving_applicatio
 import 'package:my_portfolio/pages/components/carousel/carousel.dart';
 import 'package:my_portfolio/pages/components/cv_section/cv_section.dart';
 import 'package:my_portfolio/pages/components/education/education_section.dart';
+import 'package:my_portfolio/pages/components/footer/contact/contact.dart';
 import 'package:my_portfolio/pages/components/headers/global.dart';
 import 'package:my_portfolio/pages/components/headers/header.dart';
-import 'package:my_portfolio/pages/components/headers/header_item.dart';
 import 'package:my_portfolio/pages/components/skills/skill_section.dart';
+import 'package:my_portfolio/pages/components/sponsors/sponsors.dart';
 import 'package:my_portfolio/pages/components/stats/portfoliostate.dart';
+import 'package:my_portfolio/pages/components/testimonial/testimonial_widet.dart';
 import 'package:my_portfolio/utilities/constand.dart';
 import 'package:my_portfolio/utilities/mobile_json.dart';
 
@@ -97,14 +99,14 @@ class _homePageState extends State<homePage> {
               padding: const EdgeInsets.symmetric(vertical: 28.0),
               child: portfolioState(),
             ),
-            const SizedBox(
+           const education_section(),
+           const skill_section(),
+           const social(),
+           const SizedBox(
               height: 50,
             ),
-            education_section(),
-            SizedBox(
-              height: 50,
-            ),
-            skill_section(),
+           const testimonialWidget(),
+          const  contact(),
           ],
         )),
       ),

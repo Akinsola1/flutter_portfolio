@@ -34,6 +34,7 @@ class education_section extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding:EdgeInsets.symmetric(vertical: 40),
       child: screenDetector(
           mobile: buidUi(MediaQuery.of(context).size.width * .8),
           tablet: buidUi(800),

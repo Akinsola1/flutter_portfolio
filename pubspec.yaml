@@ -74,6 +74,13 @@ flutter:
     - assets/images/myBank.jpeg
     - assets/images/instagram_clone_homepage.jpeg
     - assets/images/instagram_clone_explore.jpeg
+    - assets/images/instagram.png
+    - assets/images/loaction.png
+    - assets/images/mail.png
+    - assets/images/phone.png
+    - assets/images/snapchat.png
+    - assets/images/twitter.png
+    - assets/images/whatsapp.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

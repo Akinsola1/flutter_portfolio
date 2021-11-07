@@ -93,10 +93,26 @@ List<CarouselItemModel> carouselItems = List.generate(
                     ),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+
+              Text(
+                "fact : **This portfolio was built on pure flutter**",
+                style: TextStyle(
+                  color: kCaptionColor,
+                  height: 1.5,
+                ),
               )
             ],
           ),
         ),
         image: Container(
-          child: Image.asset(''),
+          height: 400,
+          width: 100,
+          decoration: BoxDecoration(
+            shape: BoxShape.rectangle,
+            image: DecorationImage(image: AssetImage("assets/images/myself.jpeg"), fit: BoxFit.contain)
+          ),
         )));

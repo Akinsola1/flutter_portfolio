@@ -3,11 +3,11 @@ import 'package:my_portfolio/utilities/screen_detector.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
 final List<String> sponsoreLogo = [
-  "",
-  "",
-  "",
-  "",
-  "",
+  "assets/images/twitter.png",
+  "assets/images/snapchat.png",
+  "assets/images/instagram.png",
+  "assets/images/linkedin.png",
+  "assets/images/facebook.png"
 ];
 
 class social extends StatelessWidget {
@@ -39,6 +39,7 @@ Widget _buildUi(double width) {
           children: sponsoreLogo
               .map((logo) => Container(
                   height: 20,
+                  child: Image.asset(logo),
                   constraints: BoxConstraints(
                       maxWidth: screenDetector.isMobile(context)
                           ? constraint.maxWidth / 3.0 - 50

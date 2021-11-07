@@ -230,7 +230,7 @@ class _image_carouselState extends State<image_carousel> {
         autoPlay: true,
         autoPlayInterval: Duration(seconds: 3),
         autoPlayAnimationDuration: Duration(milliseconds: 800),
-        autoPlayCurve: Curves.fastOutSlowIn,
+        autoPlayCurve: Curves.easeOutCubic ,
         pauseAutoPlayOnTouch: true,
         aspectRatio: 2.0,
         onPageChanged: (index, reason) {

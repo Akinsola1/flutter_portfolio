@@ -81,6 +81,10 @@ flutter:
     - assets/images/snapchat.png
     - assets/images/twitter.png
     - assets/images/whatsapp.png
+    - assets/images/quote.png
+    - assets/images/facebook.png
+    - assets/images/linkedin.png
+    - assets/images/myself.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

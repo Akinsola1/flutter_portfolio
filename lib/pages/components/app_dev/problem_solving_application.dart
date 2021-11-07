@@ -83,7 +83,7 @@ class _image_carouselState extends State<image_carousel> {
         autoPlayAnimationDuration: Duration(milliseconds: 800),
         autoPlayCurve: Curves.fastOutSlowIn,
         pauseAutoPlayOnTouch: true,
-        aspectRatio: 2.0,
+        aspectRatio: 3.0,
         onPageChanged: (index, reason) {
           setState(() {
             _currentIndex = index;
@@ -94,7 +94,7 @@ class _image_carouselState extends State<image_carousel> {
         return Builder(builder: (BuildContext context) {
           return Container(
             height: 500,
-            width: 246,
+            width: 240,
             child: Card(
               color: Colors.transparent,
               child: card,

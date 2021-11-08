@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/pages/components/sponsors/sponsorlogo.dart';
 import 'package:my_portfolio/utilities/screen_detector.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-final List<String> sponsoreLogo = [
-  "assets/images/twitter.png",
-  "assets/images/snapchat.png",
-  "assets/images/instagram.png",
-  "assets/images/linkedin.png",
-  "assets/images/facebook.png"
+final List<SponsorLogo> sponsoreLogo = [
+  SponsorLogo(imageurl: "assets/images/twitter.png", link: 'https://twitter.com/AkindoyinFaruq?t=xXeXj-Ddy_CW5w7Z7w0Seg&s=09'),
+  SponsorLogo(imageurl:   "assets/images/snapchat.png", link: 'https://www.snapchat.com/add/akins_21?share_id=OgQIBB10bXM&locale=en-GB'),
+  SponsorLogo(imageurl: "assets/images/instagram.png", link: 'https://instagram.com/akindoyin_faruq?utm_medium=copy_link'),
+  SponsorLogo(imageurl: "assets/images/linkedin.png", link: 'https://www.linkedin.com/in/akinsola-faruq-395110208.'),
+  SponsorLogo(imageurl: "assets/images/facebook.png", link: '')
+  
 ];
 
 class social extends StatelessWidget {
@@ -37,9 +40,14 @@ Widget _buildUi(double width) {
           runSpacing: 50,
           spacing: 50,
           children: sponsoreLogo
-              .map((logo) => Container(
+              .map((sponsorlogo) => Container(
                   height: 20,
-                  child: Image.asset(logo),
+                  child: GestureDetector(
+                    onTap: () {
+                      launch(sponsorlogo.link);
+                    } ,
+                    child: Image.asset(sponsorlogo.imageurl)
+                    ),
                   constraints: BoxConstraints(
                       maxWidth: screenDetector.isMobile(context)
                           ? constraint.maxWidth / 3.0 - 50

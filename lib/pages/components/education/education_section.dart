@@ -8,24 +8,24 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 final List<Education> educationList = [
   Education(
       description:
-          "this is my boring education history and i hope you love it ",
-      linkName: "www.bbbbbb.com",
-      period: "2019 - 2021"),
+          "Bachelor certificate of Computer science Afebabalola university. Ekiti state",
+      linkName: "www.abuad.edu.ng",
+      period: "2019 - "),
       Education(
       description:
-          "this is my boring education history and i hope you love it ",
-      linkName: "www.bbbbbb.com",
-      period: "2019 - 2021"),
+          "SSCE certificate at Mafazat comprehensive high school.Lagos state ",
+      linkName: "www.mchs.edu.ng",
+      period: "2017 - 2019"),
       Education(
       description:
-          "this is my boring education history and i hope you love it ",
-      linkName: "www.bbbbbb.com",
-      period: "2019 - 2021"),
+          "Mhaster Probity College (MPC).Ogun state",
+      linkName: "www.MPC.com",
+      period: "2013 - 2017"),
       Education(
       description:
-          "this is my boring education history and i hope you love it ",
-      linkName: "www.bbbbbb.com",
-      period: "2019 - 2021"),
+          "De-Dynamic private school",
+      linkName: "",
+      period: "2007 - 2013"),
 ];
 
 class education_section extends StatelessWidget {
@@ -66,7 +66,7 @@ class education_section extends StatelessWidget {
                 Container(
                   constraints: BoxConstraints(maxWidth: 400),
                   child: Text(
-                    "a full ,kbkjsb vsajvjkdvas dvasv bsadhv sdvs dvbsdvv sdvl sdbusad sahdvbsa dvs dvb asvashbvs vagsv asdvbsv lasvyds",
+                    "A summary of my education and certificate obtained",
                     style: TextStyle(
                       color: Colors.white,
                       height: 1.5,

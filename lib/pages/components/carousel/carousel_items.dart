@@ -94,17 +94,6 @@ List<CarouselItemModel> carouselItems = List.generate(
                   ),
                 ),
               ),
-              SizedBox(
-                height: 20,
-              ),
-
-              Text(
-                "fact : **This portfolio was built on pure flutter**",
-                style: TextStyle(
-                  color: kCaptionColor,
-                  height: 1.5,
-                ),
-              )
             ],
           ),
         ),

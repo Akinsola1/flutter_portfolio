@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/utilities/constand.dart';
 import 'package:my_portfolio/utilities/screen_detector.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class mobileapp extends StatefulWidget {
   final String image_url;
@@ -125,7 +126,9 @@ Widget _buildUi(
                               height: 48,
                               padding: EdgeInsets.symmetric(horizontal: 28),
                               child: TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  launch('https://github.com/Akinsola1/Instagram_Clone');
+                                },
                                 child: const Center(
                                   child: Text(
                                     "DOCUMENTATION",

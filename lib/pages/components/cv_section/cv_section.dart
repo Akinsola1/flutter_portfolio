@@ -8,21 +8,21 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 
 final List<DesignProcess> designProcess = [
   DesignProcess(
-      title: "DESIGN",
-      imagePath: 'assets/images/Design.png',
-      substitle: "shkfasd  hkfajrhbaks hvbashvsohvas gvfvbk jjfbvhsabn"),
+      title: "CREATIVE",
+      imagePath: 'assets/images/problem_solver.png',
+      substitle: "Solve problem and seek solution that creatively allign user needs and bussiness goals."),
   DesignProcess(
       title: "EMPHATY",
       imagePath: 'assets/images/emphaty.png',
-      substitle: "shkfasd  hkfajrhbaks hvbashvsohvas gvfvbk jjfbvhsabn"),
+      substitle: "Understands client's conditon from their perspective."),
   DesignProcess(
       title: "TEAMWORK",
       imagePath: 'assets/images/team.png',
-      substitle: "shkfasd  hkfajrhbaks hvbashvsohvas gvfvbk jjfbvhsabn"),
+      substitle: "Work with Back-End developers to build beautiful and well optimized app for user."),
   DesignProcess(
-      title: "SELF-TAUGHT",
+      title: "ANALYTICAL",
       imagePath: 'assets/images/highlevel.png',
-      substitle: "shkfasd  hkfajrhbaks hvbashvsohvas gvfvbk jjfbvhsabn"),
+      substitle: "Always able to justify every design decision based on best practices and data."),
 ];
 
 class cv_section extends StatelessWidget {

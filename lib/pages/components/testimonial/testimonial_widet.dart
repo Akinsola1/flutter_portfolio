@@ -10,22 +10,22 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 final List<testimonial> testimonials = [
   testimonial(
       text:
-          "jhasdbv sgdh ashdvhask vashbdv ahsdvhasd kvhas vhasv hasdvhsdv ysbv savshdv asdhv asbhv ashdvbasjdvb ashdvasjdvb  bajdvashvbhasdv jasd",
-      Occupation: "Software Engineer",
-      personName: "Akinsola Faruq.A",
-      profilaPhoto: "profilaPhoto"),
+          "Met faruq at the just concluded Hackathon and was flabbergasted about is intrest for computers and the tech word in general.He has always done a satisfactory work for me and i will always recommend him 👍",
+      Occupation: "Photographer",
+      personName: "AAdebola Frank",
+      profilaPhoto: "assets/images/avater4.png"),
   testimonial(
       text:
-          "jhasdbv sgdh ashdvhask vashbdv ahsdvhasd kvhas vhasv hasdvhsdv ysbv savshdv asdhv asbhv ashdvbasjdvb ashdvasjdvb  bajdvashvbhasdv jasd",
+          "Met faruq at the just concluded Hackathon and was flabbergasted about is intrest for computers and the tech word in general.He has always done a satisfactory work for me and i will always recommend him 👍",
       Occupation: "Software Engineer",
       personName: "Akinsola Faruq.A",
-      profilaPhoto: "profilaPhoto"),
+      profilaPhoto: "assets/images/avater1.jpg"),
   testimonial(
       text:
-          "jhasdbv sgdh ashdvhask vashbdv ahsdvhasd kvhas vhasv hasdvhsdv ysbv savshdv asdhv asbhv ashdvbasjdvb ashdvasjdvb  bajdvashvbhasdv jasd",
+          "Met faruq at the just concluded Hackathon and was flabbergasted about is intrest for computers and the tech word in general.He has always done a satisfactory work for me and i will always recommend him 👍",
       Occupation: "Software Engineer",
       personName: "Akinsola Faruq.A",
-      profilaPhoto: "profilaPhoto"),
+      profilaPhoto: "assets/images/avater3.png"),
 ];
 
 class testimonialWidget extends StatelessWidget {
@@ -70,20 +70,20 @@ Widget _builUi(double width) {
                     text: const TextSpan(children: [
                   TextSpan(
                       text:
-                          "ksvjf sa vjasvaskdv naskdv asjd sdvbasjdskdv asvb svbs",
+                          "Check out the Satisfactory note from client and team mate ",
                       style: TextStyle(
                         color: Colors.white,
                         height: 1.8,
                       )),
                   TextSpan(
-                    text: "Click here to view",
+                    text: "Click here to view more. ",
                     style: TextStyle(
                       color: kPrimaryColor,
                       height: 1.8,
                     ),
                   ),
                   TextSpan(
-                      text: " Please follow :) ",
+                      text: "Dont forget to leave a note",
                       style: TextStyle(
                         color: Colors.white,
                         height: 1.8,
@@ -128,7 +128,7 @@ Widget _builUi(double width) {
                                   AssetImage(testimonial.profilaPhoto),
                             ),
                             SizedBox(
-                              height: 20,
+                              width: 20,
                             ),
                             Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -137,7 +137,7 @@ Widget _builUi(double width) {
                                     testimonial.personName,
                                     style: GoogleFonts.oswald(
                                       color: Colors.white,
-                                      fontWeight: FontWeight.w900,
+                                      fontWeight: FontWeight.w500,
                                       fontSize: 16,
                                     ),
                                   ),

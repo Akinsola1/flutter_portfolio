@@ -6,10 +6,11 @@ import 'package:my_portfolio/utilities/screen_detector.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
 List<Skill> skills = [
-  Skill(skill: "Dart", percentage: 70),
-  Skill(skill: "Git", percentage: 80),
-  Skill(skill: "Kotlin", percentage: 60),
-  Skill(skill: "Swift", percentage: 50),
+  Skill(skill: "Flutter/Dart", percentage: 70),
+  Skill(skill: "Kotlin", percentage: 80),
+  Skill(skill: "Swift", percentage: 70),
+  Skill(skill: "GIT", percentage: 70),
+  Skill(skill: "UI design (Figma/Adobe XD)", percentage: 80),
 ];
 
 class skill_section extends StatelessWidget {
@@ -41,9 +42,12 @@ Widget _buildUi(double width) {
             children: [
               Expanded(
                 flex: screenDetector.isMobile(context) ? 0 : 2,
-                child: Image.asset(
-                  '',
+                child: Container(
                   width: 300,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage('assets/images/myImage.png'),
+                          fit: BoxFit.contain)),
                 ),
               ),
               SizedBox(
@@ -67,7 +71,7 @@ Widget _buildUi(double width) {
                         height: 10,
                       ),
                       const Text(
-                        'This just a junk text and blas= asdjbsdhbsmdv hsbjasdcb  havhca scga asgdc adcbbacva ca as ashsdchas assdvmcas s kasvygsdascachyadc asca',
+                        'These are the skills i have aquired over a span of 4 years of programming To build well crafted and detailed Mobile application. They have been carefully chosen to suit my need as a cross platform mobile app developer (Android & IOS), ',
                         style: TextStyle(
                           color: kCaptionColor,
                           height: 1.5,

@@ -8,7 +8,7 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 
 final List<Stat> stats = [
   Stat(count: "3", text: "Clients"),
-  Stat(count: "68+", text: "Projects"),
+  Stat(count: "25+", text: "Projects"),
   Stat(count: "4", text: "Certificate"),
   Stat(count: "2", text: "Years\nExperience"),
 ];

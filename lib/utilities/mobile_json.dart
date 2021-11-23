@@ -10,6 +10,14 @@ List mobile = [
   },
   {
     "id": 2,
+    "name" : "FACEBOOK CLONE",
+    "short_note" : "Facebook clone with detailed clone",
+    "image_url": "assets/images/facebook1.jpeg",
+    "image_url1" : "assets/images/facebook2.jpeg",
+    "branch" : "APP CLONES"
+  },
+  {
+    "id": 3,
     "name": "SMART BANK",
     "short_note":
         "Making online banking fun and easy for anyone. ",

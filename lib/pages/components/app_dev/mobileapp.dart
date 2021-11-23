@@ -190,7 +190,7 @@ class image_url1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset('assets/images/instagram_clone_homepage.jpeg');
+    return Image.asset('assets/images/facebook1.jpeg');
   }
 }
 
@@ -203,7 +203,7 @@ class image_url2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset('assets/images/instagram_clone_explore.jpeg');
+    return Image.asset('assets/images/facebook2.jpeg');
   }
 }
 

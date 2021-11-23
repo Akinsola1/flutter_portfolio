@@ -90,6 +90,8 @@ flutter:
     - assets/images/avater4.png
     - assets/images/avater3.png
     - assets/images/avater1.jpg
+    - assets/images/facebook1.jpeg
+    - assets/images/facebook2.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

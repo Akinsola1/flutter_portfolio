@@ -85,9 +85,9 @@ class _homePageState extends State<homePage> {
             mobileapp(
               image_url: '',
               image_url1: '',
-              title: mobile[0]['name'],
-              Short_note: mobile[0]['short_note'],
-              branch: mobile[0]['branch'],
+              title: mobile[1]['name'],
+              Short_note: mobile[1]['short_note'],
+              branch: mobile[1]['branch'],
             ),
             const SizedBox(height: 30),
             problem_solving_application(

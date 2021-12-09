@@ -1,2 +1,2 @@
 #MY PORTFOLIO
-###[Click here to view](https://akinsola1.github.io/#/)
+[Click here to view](https://akinsola1.github.io/#/)

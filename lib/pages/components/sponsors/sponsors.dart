@@ -40,18 +40,21 @@ Widget _buildUi(double width) {
           runSpacing: 50,
           spacing: 50,
           children: sponsoreLogo
-              .map((sponsorlogo) => Container(
-                  height: 20,
-                  child: GestureDetector(
-                    onTap: () {
-                      launch(sponsorlogo.link);
-                    } ,
-                    child: Image.asset(sponsorlogo.imageurl)
-                    ),
-                  constraints: BoxConstraints(
-                      maxWidth: screenDetector.isMobile(context)
-                          ? constraint.maxWidth / 3.0 - 50
-                          : constraint.maxWidth / 5.0 - 50)))
+              .map((sponsorlogo) => MouseRegion(
+                cursor:SystemMouseCursors.click,
+                child: Container(
+                    height: 20,
+                    child: GestureDetector(
+                      onTap: () {
+                        launch(sponsorlogo.link);
+                      } ,
+                      child: Image.asset(sponsorlogo.imageurl)
+                      ),
+                    constraints: BoxConstraints(
+                        maxWidth: screenDetector.isMobile(context)
+                            ? constraint.maxWidth / 3.0 - 50
+                            : constraint.maxWidth / 5.0 - 50)),
+              ))
               .toList(),
         );
       }),

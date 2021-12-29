@@ -1,19 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/pages/components/app_dev/mobileapp.dart';
-import 'package:my_portfolio/pages/components/app_dev/problem_solving_application.dart';
-import 'package:my_portfolio/pages/components/carousel/carousel.dart';
-import 'package:my_portfolio/pages/components/cv_section/cv_section.dart';
-import 'package:my_portfolio/pages/components/education/education_section.dart';
-import 'package:my_portfolio/pages/components/footer/contact/contact.dart';
-import 'package:my_portfolio/pages/components/headers/global.dart';
-import 'package:my_portfolio/pages/components/headers/header.dart';
-import 'package:my_portfolio/pages/components/skills/skill_section.dart';
-import 'package:my_portfolio/pages/components/sponsors/sponsors.dart';
-import 'package:my_portfolio/pages/components/stats/portfoliostate.dart';
-import 'package:my_portfolio/pages/components/testimonial/testimonial_widet.dart';
-import 'package:my_portfolio/utilities/constand.dart';
-import 'package:my_portfolio/utilities/mobile_json.dart';
+import 'package:my_portfolio/pages/components/exports.dart';
+
+import 'components/app_dev/problem_solving_application.dart';
 
 class homePage extends StatefulWidget {
   const homePage({Key? key}) : super(key: key);

@@ -10,6 +10,7 @@ file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/c
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/cv_section/cv_section.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/education/education.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/education/education_section.dart
+file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/exports.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/footer/contact/contact.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/footer/contact/contact_item.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/headers/global.dart
@@ -17,6 +18,7 @@ file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/h
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/headers/header_item.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/headers/header_logo.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/headers/headerrow.dart
+file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/hireMe/hireme.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/skills/skill_section.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/skills/skills_model.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/sponsors/sponsorlogo.dart
@@ -26,8 +28,10 @@ file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/s
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/testimonial/testimonial.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/components/testimonial/testimonial_widet.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/pages/homepage.dart
+file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/routes/routes.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/utilities/constand.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/utilities/design_process.dart
+file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/utilities/import.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/utilities/mobile_json.dart
 file:///home/akins/Documents/PLAYING_WITH_UI/my_portfolio/lib/utilities/screen_detector.dart
 file:///home/akins/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/carousel_slider-4.0.0/lib/carousel_controller.dart
@@ -80,7 +84,6 @@ file:///home/akins/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.or
 file:///home/akins/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1/lib/src/sha512.dart
 file:///home/akins/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1/lib/src/sha512_slowsinks.dart
 file:///home/akins/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1/lib/src/utils.dart
-file:///home/akins/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fluttericon-2.0.0/lib/typicons_icons.dart
 file:///home/akins/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.1.0/lib/google_fonts.dart
 file:///home/akins/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.1.0/lib/src/asset_manifest.dart
 file:///home/akins/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.1.0/lib/src/file_io.dart

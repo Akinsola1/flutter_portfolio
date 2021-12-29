@@ -127,7 +127,7 @@ Widget _buildUi(
                               padding: EdgeInsets.symmetric(horizontal: 28),
                               child: TextButton(
                                 onPressed: () {
-                                  launch('https://github.com/Akinsola1/Instagram_Clone');
+                                  launch('https://github.com/Akinsola1/YouTube_music_clone');
                                 },
                                 child: const Center(
                                   child: Text(
@@ -190,7 +190,7 @@ class image_url1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset('assets/images/facebook1.jpeg');
+    return Image.asset('assets/images/YoutubeMusic1.png');
   }
 }
 
@@ -203,7 +203,7 @@ class image_url2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset('assets/images/facebook2.jpeg');
+    return Image.asset('assets/images/YoutubeMusic2.png');
   }
 }
 

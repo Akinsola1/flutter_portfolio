@@ -43,15 +43,17 @@ Widget _buildUi(double width) {
               Expanded(
                 flex: screenDetector.isMobile(context) ? 0 : 2,
                 child: Container(
-                  width: 300,
+                  height: 350,
+                  width: 230,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/myImage.png'),
-                          fit: BoxFit.contain)),
+                    borderRadius: BorderRadius.circular(20),
+                      image: const DecorationImage(
+                          image: AssetImage('assets/images/myself1.jpg'),
+                          fit: BoxFit.cover)),
                 ),
               ),
-              SizedBox(
-                width: 50,
+              const SizedBox(
+                height: 50,
               ),
               Expanded(
                   flex: screenDetector.isMobile(context) ? 0 : 4,

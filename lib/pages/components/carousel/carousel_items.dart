@@ -99,9 +99,10 @@ List<CarouselItemModel> carouselItems = List.generate(
         ),
         image: Container(
           height: 400,
-          width: 100,
-          decoration: BoxDecoration(
+          width: 70,
+          decoration:BoxDecoration(
             shape: BoxShape.rectangle,
-            image: DecorationImage(image: AssetImage("assets/images/myself.jpeg"), fit: BoxFit.contain)
+            borderRadius:BorderRadius.circular(50) ,
+            image:const  DecorationImage(image: AssetImage("assets/images/myself1.jpg"), fit: BoxFit.contain)
           ),
         )));

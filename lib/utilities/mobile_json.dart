@@ -3,15 +3,15 @@ List mobile = [
     "id": 1,
     "name": "INSTAGRAM CLONE",
     "short_note":
-        "Instagram clone with detailed Ui. Made to improve my Ui skills",
+        "Instagram clone with detailed Ui. Made to improve my Ui",
     "image_url": "assets/images/instagram_clone_homepage.jpeg",
     "image_url1": "assets/images/instagram_clone_explore.jpeg",
     "branch": "APP CLONES"
   },
   {
     "id": 2,
-    "name" : "FACEBOOK CLONE",
-    "short_note" : "Facebook clone with detailed clone",
+    "name" : "YOUTUBE MUSIC CLONE",
+    "short_note" : "YouTube music clone with detailed ui. You definately can't find a difference",
     "image_url": "assets/images/facebook1.jpeg",
     "image_url1" : "assets/images/facebook2.jpeg",
     "branch" : "APP CLONES"
@@ -29,9 +29,9 @@ List mobile = [
 List real_life = [
   {
     "id": 1,
-    "name": "SMART BANK",
+    "name": "CraftsMan",
     "short_note":
-        "Making online banking fun and easy for anyone. ",
+        "Middle man between artisans and users",
     "image_url": "assets/images/myBank.jpeg",
     "branch": "PROBLEM SOLVING APPS"
   }

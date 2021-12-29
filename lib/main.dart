@@ -4,6 +4,7 @@ import 'package:my_portfolio/pages/homepage.dart';
 import 'package:my_portfolio/utilities/constand.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
+import 'routes/routes.dart' as route;
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +41,8 @@ class MyApp extends StatelessWidget {
           color: kBackgroundColor,
         )
       ),
-      home: homePage(),
+      onGenerateRoute: route.controller,
+      initialRoute: route.homepage,
     );
   }
 }

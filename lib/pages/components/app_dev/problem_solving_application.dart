@@ -45,7 +45,7 @@ class image1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset('assets/images/myBank_home.jpeg');
+    return Image.asset('assets/images/craftsman1.png');
   }
 }
 
@@ -54,7 +54,25 @@ class image2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset('assets/images/myBank.jpeg');
+    return Image.asset('assets/images/craftsman2.png');
+  }
+}
+
+class image3 extends StatelessWidget {
+  const image3({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset('assets/images/crafrsman3.png');
+  }
+}
+
+class image4 extends StatelessWidget {
+  const image4({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset('assets/images/craftsman4.png');
   }
 }
 
@@ -71,8 +89,10 @@ class _image_carouselState extends State<image_carousel> {
   int _currentIndex = 0;
 
   List cardList = [
-    image1(),
-    image2(),
+   const image1(),
+    const image2(),
+    const image3(),
+    const image4(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -180,7 +200,7 @@ Widget _buildUi(
                               padding: EdgeInsets.symmetric(horizontal: 28),
                               child: TextButton(
                                 onPressed: () {
-                                  launch('https://github.com/Akinsola1/myBank');
+                                  launch('https://github.com/Akinsola1/CraftsMan_rebranded');
                                 },
                                 child: const Center(
                                   child: Text(

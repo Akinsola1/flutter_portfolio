@@ -1,4 +1,0 @@
-#Sun Oct 31 16:33:36 WAT 2021
-base.0=/home/akins/Documents/PLAYING_WITH_UI/my_portfolio/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

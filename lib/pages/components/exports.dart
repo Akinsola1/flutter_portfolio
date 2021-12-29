@@ -1,0 +1,14 @@
+export 'package:my_portfolio/pages/components/app_dev/mobileapp.dart';
+export 'package:my_portfolio/pages/components/carousel/carousel.dart';
+export 'package:my_portfolio/pages/components/cv_section/cv_section.dart';
+export 'package:my_portfolio/pages/components/education/education_section.dart';
+export 'package:my_portfolio/pages/components/footer/contact/contact.dart';
+export 'package:my_portfolio/pages/components/headers/global.dart';
+export 'package:my_portfolio/pages/components/headers/header.dart';
+export 'package:my_portfolio/pages/components/skills/skill_section.dart';
+export 'package:my_portfolio/pages/components/sponsors/sponsors.dart';
+export 'package:my_portfolio/pages/components/stats/portfoliostate.dart';
+export 'package:my_portfolio/pages/components/testimonial/testimonial_widet.dart';
+export 'package:my_portfolio/utilities/constand.dart';
+export 'package:my_portfolio/utilities/mobile_json.dart';
+import 'package:my_portfolio/pages/homepage.dart';

@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/pages/components/exports.dart';
@@ -58,47 +59,45 @@ class _homePageState extends State<homePage> {
           ),
         ),
       ),
-      body: Container(
-        child: SingleChildScrollView(
-            child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              child: Header(),
-            ),
-            carousel(),
-            const SizedBox(
-              height: 10,
-            ),
-            cv_section(),
-            mobileapp(
+      body: SingleChildScrollView(
+          child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Header(),
+          FadeInUp(
+            duration: const Duration(milliseconds: 150),
+            child: carousel()),
+          const SizedBox(
+            height: 10,
+          ),
+          FadeInUp(duration: const Duration(milliseconds: 250), child: cv_section()),
+          mobileapp(
+            image_url: '',
+            image_url1: '',
+            title: mobile[1]['name'],
+            Short_note: mobile[1]['short_note'],
+            branch: mobile[1]['branch'],
+          ),
+          const SizedBox(height: 30),
+          problem_solving_application(
               image_url: '',
-              image_url1: '',
-              title: mobile[1]['name'],
-              Short_note: mobile[1]['short_note'],
-              branch: mobile[1]['branch'],
-            ),
-            const SizedBox(height: 30),
-            problem_solving_application(
-                image_url: '',
-                title: real_life[0]['name'],
-                Short_note: real_life[0]['short_note'],
-                branch: real_life[0]['branch']),
-            const Padding(
-              padding: const EdgeInsets.symmetric(vertical: 28.0),
-              child: portfolioState(),
-            ),
-            const education_section(),
-            const skill_section(),
-            const SizedBox(
-              height: 50,
-            ),
-            const testimonialWidget(),
-            const contact(),
-            const social(),
-          ],
-        )),
-      ),
+              title: real_life[0]['name'],
+              Short_note: real_life[0]['short_note'],
+              branch: real_life[0]['branch']),
+          const Padding(
+            padding: const EdgeInsets.symmetric(vertical: 28.0),
+            child: portfolioState(),
+          ),
+          const education_section(),
+          const skill_section(),
+          const SizedBox(
+            height: 50,
+          ),
+          const testimonialWidget(),
+          const contact(),
+          const social(),
+        ],
+      )),
     );
   }
 }

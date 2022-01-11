@@ -1,0 +1,7 @@
+2022/01/07-00:30:07.668 37b0b Reusing MANIFEST /tmp/flutter_tools.NFQPFV/flutter_tools_chrome_device.FCHECK/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/01/07-00:30:07.668 37b0b Recovering log #3
+2022/01/07-00:30:07.669 37b0b Reusing old log /tmp/flutter_tools.NFQPFV/flutter_tools_chrome_device.FCHECK/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/000003.log 
+2022/01/07-00:38:42.786 38f42 Level-0 table #5: started
+2022/01/07-00:38:43.512 38f42 Level-0 table #5: 1316 bytes OK
+2022/01/07-00:38:44.401 38f42 Delete type=0 #3
+2022/01/07-00:38:44.401 38f42 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/pages/components/carousel/carousel_items_model.dart';
 import 'package:my_portfolio/utilities/constand.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 List<CarouselItemModel> carouselItems = List.generate(
     5,
@@ -12,9 +13,9 @@ List<CarouselItemModel> carouselItems = List.generate(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
+             const  Text(
                 "MOBILE APP DEVELOPER",
-                style: GoogleFonts.oswald(
+                style: TextStyle(
                   color: kPrimaryColor,
                   fontWeight: FontWeight.w900,
                   fontSize: 16,
@@ -23,9 +24,9 @@ List<CarouselItemModel> carouselItems = List.generate(
               const SizedBox(
                 height: 18,
               ),
-              Text(
+             const  Text(
                 "AKINSOLA \n FARUQ.A",
-                style: GoogleFonts.oswald(
+                style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
                   fontWeight: FontWeight.w900,
@@ -35,9 +36,9 @@ List<CarouselItemModel> carouselItems = List.generate(
               const SizedBox(
                 height: 18,
               ),
-              Text(
+              const Text(
                 "Flutter Developer, based in Nigeria",
-                style: GoogleFonts.oswald(
+                style: TextStyle(
                   color: kCaptionColor,
                   fontSize: 15,
                   height: 1.0,
@@ -81,9 +82,14 @@ List<CarouselItemModel> carouselItems = List.generate(
                     borderRadius: BorderRadius.circular(8),
                   ),
                   height: 48,
-                  padding: EdgeInsets.symmetric(horizontal: 28),
+                  padding:const  EdgeInsets.symmetric(horizontal: 28),
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      const String email = 'akindoyinfaruq@gmail.com';
+                      const  String Subject = 'Hire Akinsola Faruq now';
+                      final url = 'mailto: $email?subject=${Uri.encodeFull(Subject)}&body=${Uri.encodeFull('Write job description and contact information (optional)')}';
+                      launch(url);
+                    },
                     child: const Text(
                       "HIRE ME",
                       style: TextStyle(
@@ -100,9 +106,8 @@ List<CarouselItemModel> carouselItems = List.generate(
         image: Container(
           height: 400,
           width: 70,
-          decoration:BoxDecoration(
-            shape: BoxShape.rectangle,
-            borderRadius:BorderRadius.circular(50) ,
-            image:const  DecorationImage(image: AssetImage("assets/images/myself1.jpg"), fit: BoxFit.contain)
+          decoration:const BoxDecoration(
+            shape: BoxShape.circle,
+            image:DecorationImage(image: AssetImage("assets/images/myself1.jpg"), fit: BoxFit.contain)
           ),
         )));

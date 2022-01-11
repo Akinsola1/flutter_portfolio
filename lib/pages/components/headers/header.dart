@@ -11,13 +11,11 @@ import 'package:my_portfolio/pages/components/hireMe/hireme.dart';
 import 'package:my_portfolio/utilities/screen_detector.dart';
 
 List<HeaderItem> hearderItems = [
-  HeaderItem(onTap: () {}, title: "HOME"),
-  HeaderItem(onTap: () {}, title: "MY INTRO"),
-  HeaderItem(onTap: () {}, title: "SERVICE"),
-  HeaderItem(onTap: () {}, title: "APP SAMPLES"),
-  HeaderItem(onTap: () {}, title: "TESTIMONIAL"),
-  HeaderItem(onTap: () {}, title: "CONTACTS"),
-  HeaderItem(onTap: () {}, title: "HIRE ME", isButton: true),
+  HeaderItem(onTap: () {}, title: "RESUME"),
+  HeaderItem(onTap: () {}, title: "PROJECTS"),
+  HeaderItem(onTap: () {}, title: "EDUACTION"),
+  HeaderItem(onTap: () {}, title: "SKILLS"),
+  HeaderItem(onTap: () {}, title: "Contact Me", isButton: true),
 ];
 
 class Header extends StatelessWidget {

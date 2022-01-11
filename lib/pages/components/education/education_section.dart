@@ -53,7 +53,7 @@ class education_section extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text("EDUCATION",
-                style: GoogleFonts.oswald(
+                style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.w900,
                     color: Colors.white,
@@ -91,7 +91,7 @@ class education_section extends StatelessWidget {
                       children: [
                         Text(
                           education.period,
-                          style: GoogleFonts.oswald(
+                          style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w700,
                             fontSize: 20

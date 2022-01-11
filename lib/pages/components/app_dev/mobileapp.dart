@@ -1,5 +1,3 @@
-// ignore_for_file: unnecessary_string_interpolations
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -82,7 +80,7 @@ Widget _buildUi(
                     children: [
                       Text(
                         "$branch",
-                        style: GoogleFonts.oswald(
+                        style: TextStyle(
                           color: kPrimaryColor,
                           fontWeight: FontWeight.w900,
                           fontSize: 16,
@@ -93,7 +91,7 @@ Widget _buildUi(
                       ),
                       Text(
                         '$title',
-                        style: GoogleFonts.oswald(
+                        style: TextStyle(
                           fontSize: 35,
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
@@ -105,7 +103,7 @@ Widget _buildUi(
                       ),
                       Text(
                         "$Short_note",
-                        style: GoogleFonts.oswald(
+                        style: TextStyle(
                           fontSize: 15,
                           color: kCaptionColor,
                           height: 1.5,
@@ -153,9 +151,11 @@ Widget _buildUi(
                                     color: kPrimaryColor,
                                   )),
                               height: 49,
-                              padding: EdgeInsets.symmetric(horizontal: 28),
+                              padding: const EdgeInsets.symmetric(horizontal: 28),
                               child: TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    launch('https://github.com/Akinsola1');
+                                  },
                                   child: const Center(
                                     child: Text(
                                       "MORE APPS",
@@ -231,7 +231,7 @@ class _image_carouselState extends State<image_carousel> {
       options: CarouselOptions(
         height: 500.0,
         autoPlay: true,
-        autoPlayInterval: Duration(seconds: 3),
+        autoPlayInterval: const Duration(seconds: 3),
         autoPlayAnimationDuration: Duration(milliseconds: 800),
         autoPlayCurve: Curves.easeOutCubic ,
         pauseAutoPlayOnTouch: true,

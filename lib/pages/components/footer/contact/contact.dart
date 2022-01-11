@@ -10,8 +10,8 @@ final List<contactItem> contactitem = [
   contactItem(
       iconpath: "assets/images/loaction.png",
       title: "ADDRESS",
-      text1: "Nigeria, Abuja",
-      text2: "Nigeria, Lagos"),
+      text1: "Abuja, Nigeria",
+      text2: "Lagos, Nigeria"),
   contactItem(
       iconpath: "assets/images/phone.png",
       title: "PHONE",
@@ -83,7 +83,7 @@ Widget _buildUi(double width, BuildContext context) {
                                         ),
                                         Text(
                                           contactitem.title,
-                                          style: GoogleFonts.oswald(
+                                          style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.w700,
                                             fontSize: 18,

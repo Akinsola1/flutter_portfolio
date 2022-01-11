@@ -48,7 +48,7 @@ class portfolioState extends StatelessWidget {
                 children: [
                   Text(
                     stats[index].count,
-                    style: GoogleFonts.oswald(
+                    style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 32,
                       color: Colors.white
@@ -59,7 +59,7 @@ class portfolioState extends StatelessWidget {
                   ),
                   Text(
                     stats[index].text,
-                    style: GoogleFonts.oswald(
+                    style: TextStyle(
                       fontSize: 16,
                       color: kCaptionColor,
                     ),

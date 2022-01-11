@@ -50,7 +50,7 @@ Widget _buildUi(double width) {
                     child: Column(
                       children: [
                         Text('HIRE ME',
-                            style: GoogleFonts.oswald(
+                            style: TextStyle(
                               color: kPrimaryColor,
                               fontSize: 30,
                               height: 1.5,

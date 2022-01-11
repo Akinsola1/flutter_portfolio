@@ -15,21 +15,21 @@ class Header_logo extends StatelessWidget {
             text: TextSpan(children: [
           TextSpan(
               text: "A",
-              style: GoogleFonts.oswald(
+              style: TextStyle(
                 color: Colors.white,
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
               )),
           TextSpan(
               text: ".",
-              style: GoogleFonts.oswald(
+              style: TextStyle(
                 color: Colors.white,
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
               )),
           TextSpan(
               text: "F",
-              style: GoogleFonts.oswald(
+              style: TextStyle(
                 color: Colors.green,
                 fontSize: 32,
                 fontWeight: FontWeight.bold,

@@ -157,7 +157,7 @@ Widget _buildUi(
                     children: [
                       Text(
                         "$branch",
-                        style: GoogleFonts.oswald(
+                        style: TextStyle(
                           color: kPrimaryColor,
                           fontWeight: FontWeight.w900,
                           fontSize: 16,
@@ -166,7 +166,7 @@ Widget _buildUi(
                       SizedBox(height: 10),
                       Text(
                         '$title',
-                        style: GoogleFonts.oswald(
+                        style: TextStyle(
                           fontSize: 35,
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
@@ -178,7 +178,7 @@ Widget _buildUi(
                       ),
                       Text(
                         "$Short_note",
-                        style: GoogleFonts.oswald(
+                        style: TextStyle(
                           fontSize: 15,
                           color: kCaptionColor,
                           height: 1.5,
@@ -228,10 +228,12 @@ Widget _buildUi(
                               height: 49,
                               padding: EdgeInsets.symmetric(horizontal: 28),
                               child: TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    launch('https://github.com/Akinsola1');
+                                  },
                                   child: const Center(
                                     child: Text(
-                                      "NEXT APP",
+                                      "MORE APPS",
                                       style: TextStyle(
                                           color: kPrimaryColor,
                                           fontSize: 13,

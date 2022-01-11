@@ -6,10 +6,10 @@ import 'package:my_portfolio/utilities/screen_detector.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
 List<Skill> skills = [
-  Skill(skill: "Flutter/Dart", percentage: 70),
+  Skill(skill: "Flutter/Dart", percentage: 90),
   Skill(skill: "Kotlin", percentage: 80),
-  Skill(skill: "Swift", percentage: 70),
-  Skill(skill: "GIT", percentage: 70),
+  Skill(skill: "Swift", percentage: 60),
+  Skill(skill: "GIT", percentage: 90),
   Skill(skill: "UI design (Figma/Adobe XD)", percentage: 80),
 ];
 
@@ -19,7 +19,9 @@ class skill_section extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 30),
+      padding: EdgeInsets.symmetric(
+        vertical: 30,
+      ),
       child: screenDetector(
           mobile: _buildUi(MediaQuery.of(context).size.width * .8),
           tablet: _buildUi(700),
@@ -42,14 +44,23 @@ Widget _buildUi(double width) {
             children: [
               Expanded(
                 flex: screenDetector.isMobile(context) ? 0 : 2,
-                child: Container(
-                  height: 350,
-                  width: 230,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: AssetImage('assets/images/myself1.jpg'),
-                          fit: BoxFit.cover)),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                  ),
+                  child: Container(
+                    height: 400,
+                    width: 230,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: kPrimaryColor,
+                          width: 3,
+                        ),
+                        image: DecorationImage(
+                            image: AssetImage('assets/images/myself1.jpg'),
+                            fit: BoxFit.contain)),
+                  ),
                 ),
               ),
               const SizedBox(
@@ -63,7 +74,7 @@ Widget _buildUi(double width) {
                     children: [
                       Text(
                         "SKILLS",
-                        style: GoogleFonts.oswald(
+                        style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w900,
                             fontSize: 28,

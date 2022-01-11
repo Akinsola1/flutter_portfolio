@@ -5,6 +5,7 @@ import 'package:my_portfolio/utilities/design_process.dart';
 import 'package:my_portfolio/utilities/screen_detector.dart';
 import 'package:responsive_framework/responsive_grid.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 final List<DesignProcess> designProcess = [
   DesignProcess(
@@ -16,9 +17,9 @@ final List<DesignProcess> designProcess = [
       imagePath: 'assets/images/emphaty.png',
       substitle: "Understands client's conditon from their perspective."),
   DesignProcess(
-      title: "TEAMWORK",
+      title: "TEAM PLAYER",
       imagePath: 'assets/images/team.png',
-      substitle: "Work with Back-End developers to build beautiful and well optimized app for user."),
+      substitle: "Work with Back-End developers to build beautiful and well optimized apps."),
   DesignProcess(
       title: "ANALYTICAL",
       imagePath: 'assets/images/highlevel.png',
@@ -54,19 +55,21 @@ Widget _buildUi(BuildContext context, double width) {
           children: [
             Text(
               "SIMPLE FARUQ \nGREAT QUALITIES",
-              style: GoogleFonts.oswald(
+              style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
                   height: 1.8,
                   fontSize: 18),
             ),
-            GestureDetector(
-              onTap: () {},
-              child: MouseRegion(
-                cursor: SystemMouseCursors.click,
+            MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () {
+                  launch('https://drive.google.com/file/d/1xgbTRdF2bi2JUndscVm0qbmyQ6ERd3Uy/view?usp=sharing');
+                },
                 child: Text(
-                  "Download CV",
-                  style: GoogleFonts.oswald(
+                  "See my resume",
+                  style: TextStyle(
                       color: kPrimaryColor,
                       fontWeight: FontWeight.w900,
                       fontSize: 16),
@@ -75,7 +78,7 @@ Widget _buildUi(BuildContext context, double width) {
             ),
           ],
         ),
-        SizedBox(height: 59),
+        const SizedBox(height: 59),
         Container(
           child: LayoutBuilder(
             builder: (_context, constraint) {
@@ -107,12 +110,12 @@ Widget _buildUi(BuildContext context, double width) {
                                 width: 40,
                               ),
                               SizedBox(
-                                width: 15,
+                                width: 10,
                               ),
                               Text(
                                 designProcess[index].title,
-                                style: GoogleFonts.oswald(
-                                    fontSize: 20,
+                                style: TextStyle(
+                                    fontSize: 18,
                                     fontWeight: FontWeight.w700,
                                     color: Colors.white),
                               ),
@@ -123,7 +126,7 @@ Widget _buildUi(BuildContext context, double width) {
                           ),
                           Text(
                             designProcess[index].substitle,
-                            style: GoogleFonts.oswald(
+                            style: TextStyle(
                               height: 1.5,
                               fontSize: 14,
                               color: kCaptionColor,

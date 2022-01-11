@@ -54,7 +54,7 @@ Widget _builUi(double width) {
           children: [
             Text(
               "TESTIMONIAL",
-              style: GoogleFonts.oswald(
+              style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w900,
                 fontSize: 30,
@@ -135,7 +135,7 @@ Widget _builUi(double width) {
                                 children: [
                                   Text(
                                     testimonial.personName,
-                                    style: GoogleFonts.oswald(
+                                    style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w500,
                                       fontSize: 16,

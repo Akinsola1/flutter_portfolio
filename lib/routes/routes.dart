@@ -1,6 +1,3 @@
-// TODO Implement this library.
-import 'dart:js';
-
 import 'package:my_portfolio/pages/components/hireMe/hireme.dart';
 import 'package:my_portfolio/pages/homepage.dart';
 import 'package:my_portfolio/utilities/import.dart';

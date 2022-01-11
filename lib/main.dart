@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'A.F',
+      title: 'Akinsola Faruq',
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       darkTheme: Theme.of(context).copyWith(
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       builder: (context, widget) => ResponsiveWrapper.builder(
         ClampingScrollWrapper.builder(context, widget!),
         defaultScale: true,
-        breakpoints: [
+        breakpoints:const [
             ResponsiveBreakpoint.resize(450,name: MOBILE),
             ResponsiveBreakpoint.resize(800,name: TABLET),
             ResponsiveBreakpoint.resize(1000,name: TABLET),

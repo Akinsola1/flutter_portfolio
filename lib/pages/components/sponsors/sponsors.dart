@@ -9,8 +9,7 @@ final List<SponsorLogo> sponsoreLogo = [
   SponsorLogo(imageurl:   "assets/images/snapchat.png", link: 'https://www.snapchat.com/add/akins_21?share_id=OgQIBB10bXM&locale=en-GB'),
   SponsorLogo(imageurl: "assets/images/instagram.png", link: 'https://instagram.com/akindoyin_faruq?utm_medium=copy_link'),
   SponsorLogo(imageurl: "assets/images/linkedin.png", link: 'https://www.linkedin.com/in/akinsola-faruq-395110208.'),
-  SponsorLogo(imageurl: "assets/images/facebook.png", link: '')
-  
+  SponsorLogo(imageurl: "assets/images/github.png", link: 'https://github.com/Akinsola1') 
 ];
 
 class social extends StatelessWidget {

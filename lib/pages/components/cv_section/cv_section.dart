@@ -132,7 +132,7 @@ Widget _buildUi(BuildContext context, double width) {
                               color: kCaptionColor,
                             ),
                           ),
-                        ],
+                        ], 
                       ),
                     );
                   },

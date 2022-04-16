@@ -9,13 +9,30 @@ import 'package:my_portfolio/pages/components/headers/header_logo.dart';
 import 'package:my_portfolio/pages/components/headers/headerrow.dart';
 import 'package:my_portfolio/pages/components/hireMe/hireme.dart';
 import 'package:my_portfolio/utilities/screen_detector.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 List<HeaderItem> hearderItems = [
-  HeaderItem(onTap: () {}, title: "RESUME"),
+  HeaderItem(
+      onTap: () {
+        launch(
+            'https://drive.google.com/file/d/1xgbTRdF2bi2JUndscVm0qbmyQ6ERd3Uy/view?usp=sharing');
+      },
+      title: "RESUME"),
   HeaderItem(onTap: () {}, title: "PROJECTS"),
   HeaderItem(onTap: () {}, title: "EDUACTION"),
   HeaderItem(onTap: () {}, title: "SKILLS"),
-  HeaderItem(onTap: () {}, title: "Contact Me", isButton: true),
+  HeaderItem(
+      onTap: () {
+        {
+          const String email = 'akindoyinfaruq@gmail.com';
+          const String Subject = 'Hire Akinsola Faruq now';
+          final url =
+              'mailto: $email?subject=${Uri.encodeFull(Subject)}&body=${Uri.encodeFull('Write job description and contact information (optional)')}';
+          launch(url);
+        }
+      },
+      title: "Contact Me",
+      isButton: true),
 ];
 
 class Header extends StatelessWidget {

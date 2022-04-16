@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -32,19 +32,15 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_mailer: ^2.0.1
   fluttericon: ^2.0.0
   google_fonts: ^2.1.0
   responsive_framework: ^0.1.4
+  http: ^0.13.4
   smooth_page_indicator: ^1.0.0+2
   url_launcher: ^6.0.12
 
 dev_dependencies:
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
@@ -61,40 +57,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/creative.png
-    - assets/images/Design.png
-    - assets/images/emphaty.png
-    - assets/images/team.png
-    - assets/images/highlevel.png
-    - assets/images/myBank_home.jpeg
-    - assets/images/myBank.jpeg
-    - assets/images/instagram_clone_homepage.jpeg
-    - assets/images/instagram_clone_explore.jpeg
-    - assets/images/instagram.png
-    - assets/images/loaction.png
-    - assets/images/mail.png
-    - assets/images/phone.png
-    - assets/images/snapchat.png
-    - assets/images/twitter.png
-    - assets/images/whatsapp.png
-    - assets/images/quote.png
-    - assets/images/facebook.png
-    - assets/images/linkedin.png
-    - assets/images/myself.jpeg
-    - assets/images/problem_solver.png
-    - assets/images/avater4.png
-    - assets/images/avater3.png
-    - assets/images/avater1.jpg
-    - assets/images/facebook1.jpeg
-    - assets/images/facebook2.jpeg
-    - assets/images/myself1.jpg
-    - assets/images/craftsman1.png
-    - assets/images/craftsman2.png
-    - assets/images/crafrsman3.png
-    - assets/images/craftsman4.png
-    - assets/images/YoutubeMusic1.png
-    - assets/images/YoutubeMusic2.png
-    - assets/images/github.png
+    - assets/images/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

@@ -1,7 +1,7 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/pages/components/exports.dart';
+import 'package:my_portfolio/pages/requestService/requestservice.dart';
 
 import 'components/app_dev/problem_solving_application.dart';
 
@@ -12,7 +12,12 @@ class homePage extends StatefulWidget {
   _homePageState createState() => _homePageState();
 }
 
-class _homePageState extends State<homePage> {
+class _homePageState extends State<homePage> with TickerProviderStateMixin {
+   @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,6 +99,7 @@ class _homePageState extends State<homePage> {
             height: 50,
           ),
           const testimonialWidget(),
+          const RequestService(),
           const contact(),
           const social(),
         ],

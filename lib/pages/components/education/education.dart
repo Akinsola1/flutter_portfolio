@@ -1,11 +1,11 @@
 class Education {
   final String description;
   final String linkName;
-  final String period;
+  final String subTitle;
 
   Education ({
     required this.description,
     required this.linkName,
-    required this.period,
+    required this.subTitle,
   });
 }

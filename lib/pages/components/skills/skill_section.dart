@@ -8,7 +8,7 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 List<Skill> skills = [
   Skill(skill: "Flutter/Dart", percentage: 90),
   Skill(skill: "Kotlin", percentage: 80),
-  Skill(skill: "Swift", percentage: 60),
+  Skill(skill: "Swift", percentage: 70),
   Skill(skill: "GIT", percentage: 90),
   Skill(skill: "UI design (Figma/Adobe XD)", percentage: 80),
 ];
@@ -19,9 +19,6 @@ class skill_section extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
-        vertical: 30,
-      ),
       child: screenDetector(
           mobile: _buildUi(MediaQuery.of(context).size.width * .8),
           tablet: _buildUi(700),
@@ -46,7 +43,7 @@ Widget _buildUi(double width) {
                 flex: screenDetector.isMobile(context) ? 0 : 2,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
+                    horizontal: 20,vertical: 10
                   ),
                   child: Container(
                     height: 400,
@@ -84,7 +81,7 @@ Widget _buildUi(double width) {
                         height: 10,
                       ),
                       const Text(
-                        'These are the skills i have aquired over a span of 4 years of programming To build well crafted and detailed Mobile application. They have been carefully chosen to suit my need as a cross platform mobile app developer (Android & IOS), ',
+                        'These are the skills i have acquired over a span of 2 years of programming To build well crafted and detailed Mobile application. They have been carefully chosen to suit my need as a cross platform mobile app developer.',
                         style: TextStyle(
                           color: kCaptionColor,
                           height: 1.5,

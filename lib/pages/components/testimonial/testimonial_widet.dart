@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/pages/components/testimonial/testimonial.dart';
 import 'package:my_portfolio/utilities/constand.dart';
 import 'package:my_portfolio/utilities/screen_detector.dart';
@@ -10,22 +7,22 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 final List<testimonial> testimonials = [
   testimonial(
       text:
-          "Met faruq at the just concluded Hackathon and was flabbergasted about is intrest for computers and the tech word in general.He has always done a satisfactory work for me and i will always recommend him 👍",
+          "Faruq has been a very collaborative partner in any project we've worked on and makes litrarily any project fun 🚀.",
       Occupation: "Photographer",
-      personName: "AAdebola Frank",
-      profilaPhoto: "assets/images/avater4.png"),
+      personName: "Oki Adeola",
+      profilaPhoto: "assets/images/random1.jpg"),   
   testimonial(
       text:
-          "Met faruq at the just concluded Hackathon and was flabbergasted about is intrest for computers and the tech word in general.He has always done a satisfactory work for me and i will always recommend him 👍",
+          "The best frontend developer you will ever come accross.",
       Occupation: "Software Engineer",
-      personName: "Akinsola Faruq.A",
-      profilaPhoto: "assets/images/avater1.jpg"),
+      personName: "Patrick Odey Joseph",
+      profilaPhoto: "assets/images/patrick.jpg"),
   testimonial(
       text:
-          "Met faruq at the just concluded Hackathon and was flabbergasted about is intrest for computers and the tech word in general.He has always done a satisfactory work for me and i will always recommend him 👍",
-      Occupation: "Software Engineer",
-      personName: "Akinsola Faruq.A",
-      profilaPhoto: "assets/images/avater3.png"),
+          "Sometimes i start to wonder what he can't build with Flutter 😂",
+      Occupation: "Software Designer",
+      personName: "Berida Toluse",
+      profilaPhoto: "assets/images/adeola.jpg"),
 ];
 
 class testimonialWidget extends StatelessWidget {
@@ -52,7 +49,7 @@ Widget _builUi(double width) {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               "TESTIMONIAL",
               style: TextStyle(
                 color: Colors.white,
@@ -61,7 +58,7 @@ Widget _builUi(double width) {
                 height: 1.3,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Container(
@@ -75,21 +72,8 @@ Widget _builUi(double width) {
                         color: Colors.white,
                         height: 1.8,
                       )),
-                  TextSpan(
-                    text: "Click here to view more. ",
-                    style: TextStyle(
-                      color: kPrimaryColor,
-                      height: 1.8,
-                    ),
-                  ),
-                  TextSpan(
-                      text: "Dont forget to leave a note",
-                      style: TextStyle(
-                        color: Colors.white,
-                        height: 1.8,
-                      )),
                 ]))),
-            SizedBox(
+            const SizedBox(
               height: 45,
             ),
             Flex(
@@ -101,7 +85,7 @@ Widget _builUi(double width) {
                   flex: screenDetector.isMobile(context) ? 0 : 1,
                   child: Container(
                     padding: const EdgeInsets.all(8.0),
-                    margin: EdgeInsets.only(bottom: 50),
+                    margin: const EdgeInsets.only(bottom: 50),
                     child: Column(
                       children: [
                         Container(
